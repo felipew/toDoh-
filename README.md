@@ -24,6 +24,7 @@ What is missing
 ===============
 
   - Change BaseAdapter to a CursorAdapter
+  - Localized strings
   - Edit entrys
   - Optional notification(on Add screen, put a checkbox "Notify?")
   - Timed notification (due date)
