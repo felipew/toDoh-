@@ -1,2 +1,12 @@
 
 todoh.zip
+
+*.apk
+
+*.ap_
+
+*.dex
+
+bin/toDoh!.apk
+
+*.class
