@@ -24,7 +24,7 @@
             android:layout_weight="1"
             android:ellipsize="marquee"
             android:singleLine="true"
-            android:textSize="10dp" />
+            android:textSize="10sp" />
 
     </LinearLayout>
 </LinearLayout>

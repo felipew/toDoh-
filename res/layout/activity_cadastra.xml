@@ -16,16 +16,7 @@
         android:layout_height="wrap_content"
         android:ems="10" 
         android:hint="ToDoh!">
-
-        <requestFocus />
     </EditText>
-<!--
-    <DatePicker
-        android:id="@+id/datePicker1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:calendarViewShown="false"/>
- -->
 
     <Button
         android:id="@+id/button1"
@@ -33,5 +24,4 @@
         android:layout_height="wrap_content"
         android:text="Salvar"
         android:onClick="salvaTodoh" />
-
 </LinearLayout>

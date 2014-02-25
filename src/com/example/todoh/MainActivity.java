@@ -3,10 +3,8 @@ package com.example.todoh;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Locale;
 
-import android.os.Build;
-import android.os.Bundle;
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.NotificationManager;
@@ -16,7 +14,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.util.Log;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -170,7 +168,7 @@ public class MainActivity extends Activity {
 				Toast.makeText(getApplicationContext(), "Deletando item!", Toast.LENGTH_LONG).show();
 				
 				if( db.removeTodoh( itens.get(indiceRemove).id ) > 0 ) { // remove do bd
-					Log.d(Utils.APP_NAME,"ID sendo deletado: "+itens.get(indiceRemove).id);
+//					Log.d(Utils.APP_NAME,"ID sendo deletado: "+itens.get(indiceRemove).id);
 					mNotificationManager.cancel((int) itens.get(indiceRemove).id);
 					itens.remove(indiceRemove); // remove da lista, assim nao precisa refazer a query inteira.
 				}
@@ -264,7 +262,7 @@ public class MainActivity extends Activity {
 			View linha = arg1;
 			Calendar cal = Calendar.getInstance();
 			// Formato de data utilizado
-			SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy hh:mm"); 
+			SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy hh:mm",Locale.getDefault()); 
 			String dataFormatada;
 			
 			

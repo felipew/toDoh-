@@ -10,3 +10,17 @@ todoh.zip
 bin/toDoh!.apk
 
 *.class
+
+.classpath
+
+*.dex
+
+*.dex
+
+*.class
+
+*.jar
+
+*.ap_
+
+*.apk

@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+        android:targetSdkVersion="19" />
 
     <permission android:name="com.example.todoh.LISTAR" android:label="Lista Permissoes" android:protectionLevel="dangerous"></permission>
     

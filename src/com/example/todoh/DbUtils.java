@@ -4,7 +4,6 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.util.Log;
 
 public class DbUtils {
 	private ToDohDBHelper dbHelper;
@@ -56,7 +55,7 @@ public class DbUtils {
 	}
 	
 	public void limparConcluidos(){
-		int i = db.delete(ToDohDBHelper.DATABASE_TAB_USER_TODOH,ToDohDBHelper.TAB_USER_TODOH_DONE+" = 1", null);
+		db.delete(ToDohDBHelper.DATABASE_TAB_USER_TODOH,ToDohDBHelper.TAB_USER_TODOH_DONE+" = 1", null);
 	}
 }
 

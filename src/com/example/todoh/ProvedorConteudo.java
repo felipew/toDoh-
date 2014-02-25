@@ -1,7 +1,5 @@
 package com.example.todoh;
 
-import com.example.todoh.MainActivity.ToDoh;
-
 import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.database.Cursor;
